@@ -14,8 +14,8 @@
 - Leading zeroes don't change the value of the number.
 ---
 
-## Binary(base number is two) to Decimal
-| Base number | Second power      |
+## Binary(base number is two)
+| Base number | Weight            |
 | ------------|------------------:|
 | 1(2^0)      | 1                 |
 | 2(2^1)      | 2                 |
