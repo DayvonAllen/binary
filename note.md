@@ -42,6 +42,7 @@
 - Is 1 >= 1, yes so we will subtract 1 from 1 and use it in the list of numbers: New starting point [0, 1, 0, 0, 1, 0, 1, 1], remaining number 0
 - We are done
 ---
+
 ## Decimal to Binary(Successive Division Approach)
 - 75 = 1001011. [128, 64, 32, 16, 8, 4, 2, 1]
 - if the number doesn't divide perfectly, then the remainder will be consider to be 1 (even if the true remainder is 0.5).
@@ -55,6 +56,28 @@
 - We read it from the most significant bit to least significant bit(so bottom to top)
 - The remainders give us our answer(from bottom to top)
 - We are done
+---
 
-
+## Add Binary
+- Rules: 0 + 0 = 0, 1 + 0 = 1, 1 + 1 = 10
+- 1 + 1 is 0 but you need to carry over a 1, so it becomes `10`
+- 1 + 1 = 2(decimal) in binary it is `10`. [2, 1] = 10
+- 1 + 1 + 1 = 11. You get 1 first and carry over a 1
+- 1 + 1 + 1 = 3(decimal) = [2, 1] = 11
+- 1010 + 1001 
+- first line the numbers up:
+1010
+1001
+- 10011
+- Example 2: 100110 + 110101
+100110
+110101
+- start right to left
+- 0 + 1 = 1
+- 1 + 0 = 1
+- 1 + 1 = 0 and we carry the 1 to the next column
+- 1(0 turns to one because we carried it over) + 0 = 1
+- 1 + 0 = 1
+- 1 + 1 = 10(the one would be carried over if there were more numbers)
+- answer = 1011011
 
