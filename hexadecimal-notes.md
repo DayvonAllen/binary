@@ -3,6 +3,7 @@
 - It's usually marked with a "0x" prefix in high level programming languages. ex. `0x10`, `0x2a`
 - It contains 16 symbols: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ---
+
 ## Hexadecimal(base number is 16)
 | Base number | Weight            |
 | ------------|------------------:|
@@ -33,4 +34,20 @@
 ## Hexadecimal to Binary
 - A9 = 10(decimal), 9(decimal)
 - answer = 10101001
+---
 
+## Decimal to Hexadecimal
+- first step is to divide the decimal num by 16
+- second step multiple number after the `.` by 16 to get the remainder
+- third step divide numbers in front of `.` by 16
+- Example 479
+- 479 / 16 = 29.9375
+- .9375 x 16 = 15 (this is the remainder).
+- 29 / 16 = 1.8125
+- .8125 / 16 = 13(remainder)
+-  1 / 16 = 0.0625(turns into 0) and the remainder becomes 1
+- Stop at 0
+- remainders = 15(least significant digit), 13, 1(most significant digit)
+- order is from most to least significant digit, 1,13,15
+- Answer is 1DF(hexadecimal)
+---
