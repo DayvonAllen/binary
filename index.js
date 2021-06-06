@@ -40,4 +40,4 @@ const convertToDecimal = (bin) => {
 //               1 remainder is 0
 //          1 1 1 0 0 0
 console.log(convertBinary(56));
-console.log(convertToDecimal("101101"));
+console.log(convertToDecimal("10101001"));

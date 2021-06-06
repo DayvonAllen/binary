@@ -24,7 +24,13 @@
 - Example 2: `F7D` = [256, 16, 1] helper table
 - 3,840 + 112 + 13 = 3,965
 - Anything to the right of a decimal will be calculated using 16^(some negative number)
-- Example 3: `3B4.C8`, 3B4 = [256, 16, 1], C8 = [] 16^-1 etc.
-- num^-1 etc. translates to division. Ex. 12 x 16^-1 = 12 / 16
+- Example 3: `3B4.C8`, 3B4 = [256, 16, 1]
+- dnum^-1 etc. translates to division. Ex. 12 x 16^-1 = 12 / 16
 - 768 + 180 + 0.75 + 0.03125
 - answer = 948.78125
+---
+
+## Hexadecimal to Binary
+- A9 = 10(decimal), 9(decimal)
+- answer = 10101001
+
