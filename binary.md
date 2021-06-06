@@ -58,7 +58,7 @@
 - We are done
 ---
 
-## Add Binary
+## Addition in Binary
 - Rules: 0 + 0 = 0, 1 + 0 = 1, 1 + 1 = 10
 - 1 + 1 is 0 but you need to carry over a 1, so it becomes `10`
 - 1 + 1 = 2(decimal) in binary it is `10`. [2, 1] = 10
@@ -80,4 +80,30 @@
 - 1 + 0 = 1
 - 1 + 1 = 10(the one would be carried over if there were more numbers)
 - answer = 1011011
+---
+
+## Subtraction in Binary
+- Rules: 1 - 0 = 1, 1 -1 = 0, 10 - 1 = 01( 0 - 1 is negative so we would need to the 1 from the next column)
+- 10(2 in decimal) - 1(1 in decimal) = 01(1 in decimal)
+- 100 - 10 = 010
+- we can do this too [1(4), 0(2), 0(1)] highest num is 4
+- [0(2), 0(1)] highest num is 2. 4 - 2 = 2(binary is 10 or 010)
+- 100 - 1 = 011. Everytime you cross out a zero you replace it with a 2:
+100
+  1
+020 - we borrowed a one from the end and the zero became a 2 because we had to cross it out
+  1
+012 - we borrow a 1 from the 2
+  1
+answer = 011
+---
+
+## Multiplication in Binary
+- 1001 = 9(decimal)
+-  101 = 5(decimal)
+- 101101 = 45(decimal)
+- answer = 101101
+
+
+
 
