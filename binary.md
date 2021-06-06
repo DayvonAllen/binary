@@ -103,7 +103,30 @@ answer = 011
 -  101 = 5(decimal)
 - 101101 = 45(decimal)
 - answer = 101101
+---
 
+## Signed Magnitude
+- Can represent negative and positive numbers in binary. Not helpful when performing arithmetic on binary numbers, inaccurate.
+- 6 = [8, 4, 2, 1]
+- 6 = [0, 1, 1, 0] = the first number is the sign and everything else corresponds to the magnitude of 6.
+- 6's magnitude is = 110(binary)
+- The 0 before the magnitude is considered the sign. 0 = `+`, 1 = `-`
+- To express -6 we replace the 0 with a 1 like this [1, 1, 1, 0]
+---
 
-
-
+## 2's Complement Method
+- We change every value to the opposite number to get its complement.
+- ex 1 = 0, this is how we find the complement.
+- 7 = 0111  becomes  1000, 0111 + 1000 = 1001 (answer);
+0111
+1000
+   1
+- 1001 ( the first one means negative, so we evaluate -1001)
+- `-8 + 0 + 0 + 1` = -7(this is the opposite of 7)
+- Example -12
+- 01100 = 12
+- get complement and add to 12: 01100 + 10011 ( and then add 1) = 10100
+01100
+10011
+    1
+- -16 + 0  + 4 + 0 + 0 = -12
