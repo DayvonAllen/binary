@@ -110,3 +110,5 @@
 
 ## Misc
 - Embedded systems - are usuallly small computers that are meant to do one thing(like a router, computer in a car)
+- Programs are just a bunch of bytes
+    - The processor can read those bytes and interpret those as a program.
