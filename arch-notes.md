@@ -78,7 +78,34 @@
 - In the early x86 Processors every register had a specific job for a specific operation
     - In recent processors(Mostly in protected and long modes), registers became more general purpose.
     - The old roles of the registers can help you remember their names.
-- The `e` stand for extended.
+- The `e` stands for extended.
+---
+
+## Register Extensions
+- The 32 bit registers are extensions of the old 16 bit registers(due to backwards compatibility)
+    - `eax(32 bit)` is an extension of `ax(16 bit)` and `ax` is an extension of `al(8 bit)` and `ah(8 bit)`
+- `ax` is just another name for the lowest 16 bits of `eax`.
+    - `al`,`ah`(l = low and h = high) are just names for bits 0-7 and bits 8-15 of `eax` respectively.
+- Example:
+    - If `eax` contains `0xABCD1234`, then:
+        - `ax` contains `0x1234`
+        - `ah` contains `0x12`. `al` contains `0x34`
+- That pattern is the same for all registers, just the letter changes(bax, bx, bh, bl etc.)
+- For long mode where the registers can contain 64 bits of data, it's represented like this:
+    - `rax(64 bit)`, `eax(32 bits)`, `ax(16 bits)`, `ah(8 bits)`, `al(8 bits)`
+---
+
+## More Registers
+- Index registers:
+    - `esi` - **S**ource **I**ndex register.
+    - `edi` - **D**estination **I**ndex register.
+- **I**nstruction **P**ointer:
+    - `eip`
+- Flags register.
+- Stack pointers:
+    - `esp` - **S**tack **P**ointer
+    - `ebp` - **B**ase **P**ointer.
+- There are even more registers.
 ---
 
 ## Misc
